@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 //require 'allAutoload.php';
+require 'class/Email.php';
 use PHPUnit\Framework\TestCase;
 
 //final class EmailTest extends TestCase
