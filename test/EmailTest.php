@@ -1,9 +1,11 @@
 <?php
 declare(strict_types=1);
 
+//require 'allAutoload.php';
 use PHPUnit\Framework\TestCase;
 
-final class EmailTest extends TestCase
+//final class EmailTest extends TestCase
+final class EmailTest extends PHPUnit_Framework_TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress(): void
     {
