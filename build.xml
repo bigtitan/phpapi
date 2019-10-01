@@ -15,6 +15,7 @@
       <include name="*.xml" />
    </fileset>
    <target name="make_runtime">
+      <echo msg="Make Runtime" />
       <mkdir dir="${project.basedir}/Runtime" />
       <mkdir dir="${project.basedir}/build/logs" />
       <mkdir dir="${project.basedir}/build/pdepend" />
@@ -78,9 +79,11 @@
       <exec executable="phpdox" />
    </target>
    <target name="phpunit" description="Run unit tests with PHPUnit">
+      <echo msg="Run PHPUnit" />
       <exec executable="phpunit" />
    </target>
    <target name="test" description="Run PHPUnit tests">
+      <exec command="phpunit --bootstrap vendor/autoload.php test/EmailTest">
       <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
          <batchtest>
             <fileset dir="${tests.dir}">
