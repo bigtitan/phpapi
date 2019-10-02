@@ -82,7 +82,7 @@
       <echo msg="Run PHPUnit" />
       <exec executable="phpunit" />
    </target>
-   <target name="test" description="Run PHPUnit tests">
+   <target name="unittest" description="Run PHPUnit tests">
       <exec command="phpunit --bootstrap vendor/autoload.php test/EmailTest"/>
 <!--      <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
          <batchtest>
