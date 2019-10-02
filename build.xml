@@ -84,13 +84,13 @@
    </target>
    <target name="test" description="Run PHPUnit tests">
       <exec command="phpunit --bootstrap vendor/autoload.php test/EmailTest">
-      <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
+<!--      <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
          <batchtest>
             <fileset dir="${tests.dir}">
                <include name="**/*Test.php" />
             </fileset>
          </batchtest>
-      </phpunit>
+      </phpunit>-->
    </target>
    <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
       <exec executable="phpcb">
