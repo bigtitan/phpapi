@@ -5,8 +5,8 @@ declare(strict_types=1);
 require 'class/Email.php';
 use PHPUnit\Framework\TestCase;
 
-//final class EmailTest extends TestCase
-final class EmailTest extends PHPUnit_Framework_TestCase
+final class EmailTest extends TestCase
+//final class EmailTest extends PHPUnit_Framework_TestCase
 {
     public function testCanBeCreatedFromValidEmailAddress(): void
     {
