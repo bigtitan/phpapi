@@ -8,11 +8,19 @@ use PHPUnit\Framework\TestCase;
 final class EmailTest extends TestCase
 //final class EmailTest extends PHPUnit_Framework_TestCase
 {
-    public function testCanBeCreatedFromValidEmailAddress(): void
+    public function testCanBeCreatedFromValidEmailAddress1(): void
     {
         $this->assertInstanceOf(
             Email::class,
             Email::fromString('user@example.com')
+        );
+    }
+
+    public function testCanBeCreatedFromValidEmailAddress2(): void
+    {
+        $this->assertInstanceOf(
+            Email::class,
+            Email::fromString('userexample.com')
         );
     }
 
