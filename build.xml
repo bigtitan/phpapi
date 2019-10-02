@@ -83,7 +83,6 @@
       <exec executable="phpunit" />
    </target>
    <target name="unittest" description="Run PHPUnit tests">
-<!--     <exec command="phpunit --fail-on-warning --bootstrap vendor/autoload.php test/*Test"/>-->
       <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
          <batchtest>
             <fileset dir="${tests.dir}">
