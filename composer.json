@@ -1,0 +1,8 @@
+{
+    "require-dev": {
+        "phing/phing": "3.0.0-alpha1",
+        "phpunit/phpunit": "^6"
+    },
+    "min-stability": "alpha"
+}
+
